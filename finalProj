@@ -1,0 +1,231 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Quin Ann Amigo, a passionate graphic designer and student." />
+  <title>Graphic Designer Portfolio</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <h1>Graphic Designer Portfolio</h1>
+  <nav>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">My Projects</button>
+    <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})">Skills</button>
+    <button onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'})">Contacts</button>
+  </nav>
+</header>
+
+<!-- ===================== ABOUT ME ===================== -->
+<section id="about">
+  <div class="about">
+    <img src="profile.jpg" alt="Profile Image of Quin Ann Amigo" loading="lazy" />
+    <div>
+      <h2>About Me</h2>
+      <p>Hello! I’m Quin Ann Amigo, also known as Kwen. I am a 3rd-year student passionate about graphic design. I enjoy learning new tools, techniques, and trends to create creative and meaningful designs.</p>
+      <p><strong>Always learning, never giving up.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <img src="car.png" alt="Rent Luxury Car Advertisement" loading="lazy" />
+      <p>Rent Luxury Car Advertisement</p>
+    </div>
+
+    <div class="card">
+      <img src="burger.png" alt="Burger Promotion Design" loading="lazy" />
+      <p>Burger Promotion Design</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Canva</div>
+    <div class="skill">Photoshop</div>
+    <div class="skill">CapCut</div>
+    <div class="skill">Illustrator</div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTS ===================== -->
+<section id="contacts">
+  <div class="contacts">
+    <h2>Contacts</h2>
+    <p>Facebook: Quin Ann</p>
+    <p>Instagram: @ikyk.kwen</p>
+    <p>Phone: 0946 354 9676</p>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  © 2025 Quin Ann Amigo | Graphic Designer Portfolio
+</footer>
+
+</body>
+</html>
+
+    }
+}
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd1e8, #ffc0cb);
+  color: #333;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e91e63;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #c2185b;
+}
+
+/* ===================== SECTION ===================== */
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Headings in sections */
+section h2 {
+  color: #e91e63;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===================== ABOUT ME ===================== */
+.about {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 250px;
+}
+
+.about div {
+  max-width: 600px;
+}
+
+/* ===================== PROJECTS ===================== */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ===================== SKILLS ===================== */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: default;
+}
+
+/* ===================== CONTACTS ===================== */
+.contacts {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  background: #e91e63;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
